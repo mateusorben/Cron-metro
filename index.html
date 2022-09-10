@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <div>
+        <input type="checkbox" class="checkbox" id="checkbox">
+
+        <label class="label" for="checkbox">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+    <div class="content-timer">
+        <h1 class="timer">00:00:00</h1>
+            <button class="start-btn" onclick="start()">Iniciar</button>
+            <button class="pause-btn" onclick="pause()">Pausar</button>  
+            <button class="marc-btn" onclick="marc()">Marcar</button>
+            <button class="stop-btn" onclick="stop()">Parar</button>
+        </div>
+    </div>
+
+    <div class="results">
+        <div>
+            <h2>Marcações:</h2>
+            <div class="content-marc">
+            </div>
+            <button class="cleanMarc-btn" onclick="cleanMarc()">Limpar</button>
+        </div>
+        <div>
+            <h2>Parada(s):</h2>
+            <div class="content-stops">
+            </div>
+            <button class="cleanStop-btn" onclick="cleanStop()">Limpar</button>
+        </div>
+    </div>
+
+    <script src="contador.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
